@@ -1,0 +1,616 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Linux - 3.10.0-1127.10.1.el7.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /public/software/mpi/mpich2-1.5-intel/bin/mpicc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Intel, found in:
+        /public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/3.27.0-rc5/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /public/software/compiler/gnu/7.2.0/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/3.27.0-rc5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-nop93s"
+      binary: "/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-nop93s"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-nop93s'
+        
+        Run Build Command(s): /public/source/cmake-3.27.0-rc5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ad5cc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ad5cc.dir/build.make CMakeFiles/cmTC_ad5cc.dir/build
+        gmake[1]: Entering directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-nop93s'
+        Building C object CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o
+        /public/software/mpi/mpich2-1.5-intel/bin/mpicc   -v -MD -MT CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -c /public/source/cmake-3.27.0-rc5/Modules/CMakeCCompilerABI.c
+        mpicc for MPICH2 version 1.5
+        icc version 17.0.5 (gcc version 4.8.5 compatibility)
+        /public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64/mcpcom    --target_efi2 --lang=c -oCMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -_g -mP3OPT_inline_alloca -D__ICC=1700 -D__INTEL_COMPILER=1700 -D__INTEL_COMPILER_UPDATE=5 -D__PTRDIFF_TYPE__=long "-D__SIZE_TYPE__=unsigned long" -D__WCHAR_TYPE__=int "-D__WINT_TYPE__=unsigned int" "-D__INTMAX_TYPE__=long int" "-D__UINTMAX_TYPE__=long unsigned int" -D__LONG_MAX__=9223372036854775807L -D__QMSPP_ -D__OPTIMIZE__ -D__NO_MATH_INLINES -D__NO_STRING_INLINES -D__GNUC_GNU_INLINE__ -D__GNUC__=4 -D__GNUC_MINOR__=8 -D__GNUC_PATCHLEVEL__=5 -D__LP64__ -D_LP64 -D__GXX_ABI_VERSION=1002 "-D__USER_LABEL_PREFIX__= " -D__REGISTER_PREFIX__= -D__INTEL_RTTI__ -D__unix__ -D__unix -D__linux__ -D__linux -D__gnu_linux__ -B -Dunix -Dlinux "-_Asystem(unix)" -D__ELF__ -D__x86_64 -D__x86_64__ -D__amd64 -D__amd64__ "-_Acpu(x86_64)" "-_Amachine(x86_64)" -D__INTEL_COMPILER_BUILD_DATE=20170817 -D__INTEL_OFFLOAD -D__i686 -D__i686__ -D__pentiumpro -D__pentiumpro__ -D__pentium4 -D__pentium4__ -D__tune_pentium4__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE__ -D__SSE_MATH__ -D__MMX__ -_k -_8 -_l --has_new_stdarg_support -_a -_b --gnu_version=40805 -_W5 --gcc-extern-inline --dependency_file_name CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o.d --compile_dependencies --dependency_target_name CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o --multibyte_chars -mGLOB_diag_suppress_sys -I/public/software/mpi/mpich2-1.5-intel/include --array_section --simd --simd_func --offload_mode=1 --offload_target_names=gfx,GFX,mic,MIC --offload_unique_string=icc0408150608TSH3EM -mGLOB_em64t=TRUE -mP1OPT_version=17.0-intel64 -mGLOB_diag_file=CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.diag -mGLOB_long_size_64 -mGLOB_routine_pointer_size_64 -mP1OPT_print_version=FALSE -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE -mGLOB_gcc_version=485 "-mGLOB_options_string=-I/public/software/mpi/mpich2-1.5-intel/include -v -MD -MT CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -c" -mGLOB_cxx_limited_range=FALSE -mCG_extend_parms=FALSE -mGLOB_compiler_bin_directory=/public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64 -mGLOB_as_output_backup_file_name=/tmp/icc9leceyas_.s -mIPOPT_activate -mIPOPT_lite -mGLOB_instruction_tuning=0x0 -mGLOB_uarch_tuning=0x0 -mGLOB_product_id_code=0x22006d91 -mCG_bnl_movbe=T -mGLOB_extended_instructions=0x8 -mP3OPT_use_mspp_call_convention -mP2OPT_subs_out_of_bound=FALSE -mP2OPT_disam_type_based_disam=2 -mP2OPT_disam_assume_ansi_c -mP2OPT_checked_disam_ansi_alias=TRUE -mGLOB_ansi_alias -mPGOPTI_value_profile_use=T -mP2OPT_il0_array_sections=TRUE -mGLOB_offload_mode=1 -mP2OPT_offload_unique_var_string=icc0408150608TSH3EM -mP2OPT_hlo_level=2 -mP2OPT_hlo -mP2OPT_hpo_rtt_control=0 -mIPOPT_args_in_regs=0 -mP2OPT_disam_assume_nonstd_intent_in=FALSE -mGLOB_imf_mapping_library=/public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64/libiml_attr.so -mPGOPTI_gen_threadsafe_level=0 -mIPOPT_lto_object_enabled -mIPOPT_lto_object_value=1 -mIPOPT_obj_output_file_name=CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -mIPOPT_whole_archive_fixup_file_name=/tmp/iccwarchf5xBVE -mGLOB_linker_version=2.27 -mGLOB_driver_tempfile_name=/tmp/icctempfileZxcHhd -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_async_unwind_tables=TRUE -mGLOB_obj_output_file=CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -mGLOB_source_dialect=GLOB_SOURCE_DIALECT_C -mP1OPT_source_file_name=/public/source/cmake-3.27.0-rc5/Modules/CMakeCCompilerABI.c -mP1OPT_full_source_file_name=/public/source/cmake-3.27.0-rc5/Modules/CMakeCCompilerABI.c /public/source/cmake-3.27.0-rc5/Modules/CMakeCCompilerABI.c
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /public/software/mpi/mpich2-1.5-intel/include
+         /public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/intel64
+         /public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/icc
+         /public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include
+         /usr/include/
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_ad5cc
+        /public/source/cmake-3.27.0-rc5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad5cc.dir/link.txt --verbose=1
+        /public/software/mpi/mpich2-1.5-intel/bin/mpicc  -v -rdynamic CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -o cmTC_ad5cc 
+        mpicc for MPICH2 version 1.5
+        icc version 17.0.5 (gcc version 4.8.5 compatibility)
+        /public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64/mcpcom    -mGLOB_em64t=TRUE -mP1OPT_version=17.0-intel64 -mGLOB_diag_file=CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.diag -mGLOB_long_size_64 -mGLOB_routine_pointer_size_64 -mP1OPT_print_version=FALSE -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE -mGLOB_gcc_version=485 "-mGLOB_options_string=-I/public/software/mpi/mpich2-1.5-intel/include -v -rdynamic -o cmTC_ad5cc -L/public/software/mpi/mpich2-1.5-intel/lib -lmpich -lopa -lmpl -lrt -lpthread" -mGLOB_cxx_limited_range=FALSE -mCG_extend_parms=FALSE -mGLOB_compiler_bin_directory=/public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64 -mGLOB_as_output_backup_file_name=/tmp/icc9RivPGas_.s -mGLOB_dashboard_use_source_name -mIPOPT_activate -mGLOB_product_id_code=0x22006d91 -mP3OPT_use_mspp_call_convention -mP2OPT_subs_out_of_bound=FALSE -mP2OPT_disam_type_based_disam=2 -mP2OPT_disam_assume_ansi_c -mP2OPT_checked_disam_ansi_alias=TRUE -mGLOB_ansi_alias -mPGOPTI_value_profile_use=T -mGLOB_opt_report_use_source_name -mP2OPT_il0_array_sections=TRUE -mGLOB_offload_mode=1 -mP2OPT_offload_unique_var_string=icc0487495390VjN7IR -mP2OPT_hlo -mP2OPT_hpo_rtt_control=0 -mIPOPT_args_in_regs=0 -mP2OPT_disam_assume_nonstd_intent_in=FALSE -mGLOB_imf_mapping_library=/public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64/libiml_attr.so -mPGOPTI_gen_threadsafe_level=0 -mIPOPT_link -mIPOPT_ipo_activate -mIPOPT_mo_activate -mIPOPT_source_files_list=/tmp/iccsliskKfFf0 -mIPOPT_mo_global_data -mIPOPT_link_script_file=/tmp/iccscriptn6dt6y "-mIPOPT_cmdline_link="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o" "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o" "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o" "-export-dynamic" "--eh-frame-hdr" "--build-id" "-dynamic-linker" "/lib64/ld-linux-x86-64.so.2" "-m" "elf_x86_64" "-L/public/software/mpi/mpich2-1.5-intel/lib" "-o" "cmTC_ad5cc" "-L/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/lib/intel64_lin" "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/" "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64" "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/" "-L/lib/../lib64" "-L/lib/../lib64/" "-L/usr/lib/../lib64" "-L/usr/lib/../lib64/" "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../" "-L/lib64" "-L/lib/" "-L/usr/lib64" "-L/usr/lib" "CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o" "-lmpich" "-lopa" "-lmpl" "-lrt" "-lpthread" "-Bdynamic" "-Bstatic" "-limf" "-lsvml" "-lirng" "-Bdynamic" "-lm" "-Bstatic" "-lipgo" "-ldecimal" "--as-needed" "-Bdynamic" "-lcilkrts" "-lstdc++" "--no-as-needed" "-lgcc" "-lgcc_s" "-Bstatic" "-lirc" "-lsvml" "-Bdynamic" "-lc" "-lgcc" "-lgcc_s" "-Bstatic" "-lirc_s" "-Bdynamic" "-ldl" "-lc" "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o" "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o"" -mIPOPT_il_in_obj -mIPOPT_ipo_activate_warn=FALSE -mIPOPT_obj_output_file_name=/tmp/ipo_iccMr558C.o -mIPOPT_whole_archive_fixup_file_name=/tmp/iccwarchYBwPun -mGLOB_linker_version=2.27 -mGLOB_driver_tempfile_name=/tmp/icctempfileFUlUoW -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_async_unwind_tables=TRUE -mGLOB_obj_output_file=/tmp/ipo_iccMr558C.o -mGLOB_source_dialect=GLOB_SOURCE_DIALECT_NONE -mP1OPT_source_file_name=ipo_out.c CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -mIPOPT_object_files=T -mIPOPT_assembly_files=/tmp/iccalisMf9zQK -mIPOPT_generated_tempfiles=/tmp/iccelistahlHj -mIPOPT_embedded_object_base_name=/tmp/icceobj0rN6xS -mIPOPT_cmdline_link_new_name=/tmp/iccllis9rPSor
+        ld    /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -export-dynamic --eh-frame-hdr --build-id -dynamic-linker /lib64/ld-linux-x86-64.so.2 -m elf_x86_64 -L/public/software/mpi/mpich2-1.5-intel/lib -o cmTC_ad5cc -L/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/lib/intel64_lin -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/ -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/ -L/lib/../lib64 -L/lib/../lib64/ -L/usr/lib/../lib64 -L/usr/lib/../lib64/ -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../ -L/lib64 -L/lib/ -L/usr/lib64 -L/usr/lib CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -lmpich -lopa -lmpl -lrt -lpthread -Bdynamic -Bstatic -limf -lsvml -lirng -Bdynamic -lm -Bstatic -lipgo -ldecimal --as-needed -Bdynamic -lcilkrts -lstdc++ --no-as-needed -lgcc -lgcc_s -Bstatic -lirc -lsvml -Bdynamic -lc -lgcc -lgcc_s -Bstatic -lirc_s -Bdynamic -ldl -lc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+        gmake[1]: Leaving directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-nop93s'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/public/software/mpi/mpich2-1.5-intel/include]
+          add: [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/intel64]
+          add: [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/icc]
+          add: [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include]
+          add: [/usr/include/]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/public/software/mpi/mpich2-1.5-intel/include] ==> [/public/software/mpi/mpich2-1.5-intel/include]
+        collapse include dir [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/intel64] ==> [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/intel64]
+        collapse include dir [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/icc] ==> [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/icc]
+        collapse include dir [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include] ==> [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include]
+        collapse include dir [/usr/include/] ==> [/usr/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/public/software/mpi/mpich2-1.5-intel/include;/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/intel64;/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/icc;/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include;/usr/local/include;/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-nop93s']
+        ignore line: []
+        ignore line: [Run Build Command(s): /public/source/cmake-3.27.0-rc5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ad5cc/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_ad5cc.dir/build.make CMakeFiles/cmTC_ad5cc.dir/build]
+        ignore line: [gmake[1]: Entering directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-nop93s']
+        ignore line: [Building C object CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/public/software/mpi/mpich2-1.5-intel/bin/mpicc   -v -MD -MT CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -c /public/source/cmake-3.27.0-rc5/Modules/CMakeCCompilerABI.c]
+        ignore line: [mpicc for MPICH2 version 1.5]
+        ignore line: [icc version 17.0.5 (gcc version 4.8.5 compatibility)]
+        ignore line: [/public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64/mcpcom    --target_efi2 --lang=c -oCMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -_g -mP3OPT_inline_alloca -D__ICC=1700 -D__INTEL_COMPILER=1700 -D__INTEL_COMPILER_UPDATE=5 -D__PTRDIFF_TYPE__=long "-D__SIZE_TYPE__=unsigned long" -D__WCHAR_TYPE__=int "-D__WINT_TYPE__=unsigned int" "-D__INTMAX_TYPE__=long int" "-D__UINTMAX_TYPE__=long unsigned int" -D__LONG_MAX__=9223372036854775807L -D__QMSPP_ -D__OPTIMIZE__ -D__NO_MATH_INLINES -D__NO_STRING_INLINES -D__GNUC_GNU_INLINE__ -D__GNUC__=4 -D__GNUC_MINOR__=8 -D__GNUC_PATCHLEVEL__=5 -D__LP64__ -D_LP64 -D__GXX_ABI_VERSION=1002 "-D__USER_LABEL_PREFIX__= " -D__REGISTER_PREFIX__= -D__INTEL_RTTI__ -D__unix__ -D__unix -D__linux__ -D__linux -D__gnu_linux__ -B -Dunix -Dlinux "-_Asystem(unix)" -D__ELF__ -D__x86_64 -D__x86_64__ -D__amd64 -D__amd64__ "-_Acpu(x86_64)" "-_Amachine(x86_64)" -D__INTEL_COMPILER_BUILD_DATE=20170817 -D__INTEL_OFFLOAD -D__i686 -D__i686__ -D__pentiumpro -D__pentiumpro__ -D__pentium4 -D__pentium4__ -D__tune_pentium4__ -D__SSE2__ -D__SSE2_MATH__ -D__SSE__ -D__SSE_MATH__ -D__MMX__ -_k -_8 -_l --has_new_stdarg_support -_a -_b --gnu_version=40805 -_W5 --gcc-extern-inline --dependency_file_name CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o.d --compile_dependencies --dependency_target_name CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o --multibyte_chars -mGLOB_diag_suppress_sys -I/public/software/mpi/mpich2-1.5-intel/include --array_section --simd --simd_func --offload_mode=1 --offload_target_names=gfx GFX mic MIC --offload_unique_string=icc0408150608TSH3EM -mGLOB_em64t=TRUE -mP1OPT_version=17.0-intel64 -mGLOB_diag_file=CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.diag -mGLOB_long_size_64 -mGLOB_routine_pointer_size_64 -mP1OPT_print_version=FALSE -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE -mGLOB_gcc_version=485 "-mGLOB_options_string=-I/public/software/mpi/mpich2-1.5-intel/include -v -MD -MT CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -c" -mGLOB_cxx_limited_range=FALSE -mCG_extend_parms=FALSE -mGLOB_compiler_bin_directory=/public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64 -mGLOB_as_output_backup_file_name=/tmp/icc9leceyas_.s -mIPOPT_activate -mIPOPT_lite -mGLOB_instruction_tuning=0x0 -mGLOB_uarch_tuning=0x0 -mGLOB_product_id_code=0x22006d91 -mCG_bnl_movbe=T -mGLOB_extended_instructions=0x8 -mP3OPT_use_mspp_call_convention -mP2OPT_subs_out_of_bound=FALSE -mP2OPT_disam_type_based_disam=2 -mP2OPT_disam_assume_ansi_c -mP2OPT_checked_disam_ansi_alias=TRUE -mGLOB_ansi_alias -mPGOPTI_value_profile_use=T -mP2OPT_il0_array_sections=TRUE -mGLOB_offload_mode=1 -mP2OPT_offload_unique_var_string=icc0408150608TSH3EM -mP2OPT_hlo_level=2 -mP2OPT_hlo -mP2OPT_hpo_rtt_control=0 -mIPOPT_args_in_regs=0 -mP2OPT_disam_assume_nonstd_intent_in=FALSE -mGLOB_imf_mapping_library=/public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64/libiml_attr.so -mPGOPTI_gen_threadsafe_level=0 -mIPOPT_lto_object_enabled -mIPOPT_lto_object_value=1 -mIPOPT_obj_output_file_name=CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -mIPOPT_whole_archive_fixup_file_name=/tmp/iccwarchf5xBVE -mGLOB_linker_version=2.27 -mGLOB_driver_tempfile_name=/tmp/icctempfileZxcHhd -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_async_unwind_tables=TRUE -mGLOB_obj_output_file=CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -mGLOB_source_dialect=GLOB_SOURCE_DIALECT_C -mP1OPT_source_file_name=/public/source/cmake-3.27.0-rc5/Modules/CMakeCCompilerABI.c -mP1OPT_full_source_file_name=/public/source/cmake-3.27.0-rc5/Modules/CMakeCCompilerABI.c /public/source/cmake-3.27.0-rc5/Modules/CMakeCCompilerABI.c]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /public/software/mpi/mpich2-1.5-intel/include]
+        ignore line: [ /public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/intel64]
+        ignore line: [ /public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include/icc]
+        ignore line: [ /public/software/compiler/intel/intel-compiler-2017.5.239/compiler/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include]
+        ignore line: [ /usr/include/]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_ad5cc]
+        ignore line: [/public/source/cmake-3.27.0-rc5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad5cc.dir/link.txt --verbose=1]
+        ignore line: [/public/software/mpi/mpich2-1.5-intel/bin/mpicc  -v -rdynamic CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -o cmTC_ad5cc ]
+        ignore line: [mpicc for MPICH2 version 1.5]
+        ignore line: [icc version 17.0.5 (gcc version 4.8.5 compatibility)]
+        ignore line: [/public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64/mcpcom    -mGLOB_em64t=TRUE -mP1OPT_version=17.0-intel64 -mGLOB_diag_file=CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.diag -mGLOB_long_size_64 -mGLOB_routine_pointer_size_64 -mP1OPT_print_version=FALSE -mCG_use_gas_got_workaround=F -mP2OPT_align_option_used=TRUE -mGLOB_gcc_version=485 "-mGLOB_options_string=-I/public/software/mpi/mpich2-1.5-intel/include -v -rdynamic -o cmTC_ad5cc -L/public/software/mpi/mpich2-1.5-intel/lib -lmpich -lopa -lmpl -lrt -lpthread" -mGLOB_cxx_limited_range=FALSE -mCG_extend_parms=FALSE -mGLOB_compiler_bin_directory=/public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64 -mGLOB_as_output_backup_file_name=/tmp/icc9RivPGas_.s -mGLOB_dashboard_use_source_name -mIPOPT_activate -mGLOB_product_id_code=0x22006d91 -mP3OPT_use_mspp_call_convention -mP2OPT_subs_out_of_bound=FALSE -mP2OPT_disam_type_based_disam=2 -mP2OPT_disam_assume_ansi_c -mP2OPT_checked_disam_ansi_alias=TRUE -mGLOB_ansi_alias -mPGOPTI_value_profile_use=T -mGLOB_opt_report_use_source_name -mP2OPT_il0_array_sections=TRUE -mGLOB_offload_mode=1 -mP2OPT_offload_unique_var_string=icc0487495390VjN7IR -mP2OPT_hlo -mP2OPT_hpo_rtt_control=0 -mIPOPT_args_in_regs=0 -mP2OPT_disam_assume_nonstd_intent_in=FALSE -mGLOB_imf_mapping_library=/public/software/compiler/intel/intel-compiler-2017.5.239/bin/intel64/libiml_attr.so -mPGOPTI_gen_threadsafe_level=0 -mIPOPT_link -mIPOPT_ipo_activate -mIPOPT_mo_activate -mIPOPT_source_files_list=/tmp/iccsliskKfFf0 -mIPOPT_mo_global_data -mIPOPT_link_script_file=/tmp/iccscriptn6dt6y "-mIPOPT_cmdline_link="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o" "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o" "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o" "-export-dynamic" "--eh-frame-hdr" "--build-id" "-dynamic-linker" "/lib64/ld-linux-x86-64.so.2" "-m" "elf_x86_64" "-L/public/software/mpi/mpich2-1.5-intel/lib" "-o" "cmTC_ad5cc" "-L/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/lib/intel64_lin" "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/" "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64" "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/" "-L/lib/../lib64" "-L/lib/../lib64/" "-L/usr/lib/../lib64" "-L/usr/lib/../lib64/" "-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../" "-L/lib64" "-L/lib/" "-L/usr/lib64" "-L/usr/lib" "CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o" "-lmpich" "-lopa" "-lmpl" "-lrt" "-lpthread" "-Bdynamic" "-Bstatic" "-limf" "-lsvml" "-lirng" "-Bdynamic" "-lm" "-Bstatic" "-lipgo" "-ldecimal" "--as-needed" "-Bdynamic" "-lcilkrts" "-lstdc++" "--no-as-needed" "-lgcc" "-lgcc_s" "-Bstatic" "-lirc" "-lsvml" "-Bdynamic" "-lc" "-lgcc" "-lgcc_s" "-Bstatic" "-lirc_s" "-Bdynamic" "-ldl" "-lc" "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o" "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o"" -mIPOPT_il_in_obj -mIPOPT_ipo_activate_warn=FALSE -mIPOPT_obj_output_file_name=/tmp/ipo_iccMr558C.o -mIPOPT_whole_archive_fixup_file_name=/tmp/iccwarchYBwPun -mGLOB_linker_version=2.27 -mGLOB_driver_tempfile_name=/tmp/icctempfileFUlUoW -mP3OPT_asm_target=P3OPT_ASM_TARGET_GAS -mGLOB_async_unwind_tables=TRUE -mGLOB_obj_output_file=/tmp/ipo_iccMr558C.o -mGLOB_source_dialect=GLOB_SOURCE_DIALECT_NONE -mP1OPT_source_file_name=ipo_out.c CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -mIPOPT_object_files=T -mIPOPT_assembly_files=/tmp/iccalisMf9zQK -mIPOPT_generated_tempfiles=/tmp/iccelistahlHj -mIPOPT_embedded_object_base_name=/tmp/icceobj0rN6xS -mIPOPT_cmdline_link_new_name=/tmp/iccllis9rPSor]
+        link line: [ld    /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -export-dynamic --eh-frame-hdr --build-id -dynamic-linker /lib64/ld-linux-x86-64.so.2 -m elf_x86_64 -L/public/software/mpi/mpich2-1.5-intel/lib -o cmTC_ad5cc -L/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/lib/intel64_lin -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/ -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/ -L/lib/../lib64 -L/lib/../lib64/ -L/usr/lib/../lib64 -L/usr/lib/../lib64/ -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../ -L/lib64 -L/lib/ -L/usr/lib64 -L/usr/lib CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o -lmpich -lopa -lmpl -lrt -lpthread -Bdynamic -Bstatic -limf -lsvml -lirng -Bdynamic -lm -Bstatic -lipgo -ldecimal --as-needed -Bdynamic -lcilkrts -lstdc++ --no-as-needed -lgcc -lgcc_s -Bstatic -lirc -lsvml -Bdynamic -lc -lgcc -lgcc_s -Bstatic -lirc_s -Bdynamic -ldl -lc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+          arg [ld] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o]
+          arg [-export-dynamic] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-L/public/software/mpi/mpich2-1.5-intel/lib] ==> dir [/public/software/mpi/mpich2-1.5-intel/lib]
+          arg [-o] ==> ignore
+          arg [cmTC_ad5cc] ==> ignore
+          arg [-L/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/lib/intel64_lin] ==> dir [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/lib/intel64_lin]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/lib/../lib64/] ==> dir [/lib/../lib64/]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/../lib64/] ==> dir [/usr/lib/../lib64/]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../]
+          arg [-L/lib64] ==> dir [/lib64]
+          arg [-L/lib/] ==> dir [/lib/]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_ad5cc.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lmpich] ==> lib [mpich]
+          arg [-lopa] ==> lib [opa]
+          arg [-lmpl] ==> lib [mpl]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-Bstatic] ==> search static
+          arg [-limf] ==> lib [imf]
+          arg [-lsvml] ==> lib [svml]
+          arg [-lirng] ==> lib [irng]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lm] ==> lib [m]
+          arg [-Bstatic] ==> search static
+          arg [-lipgo] ==> lib [ipgo]
+          arg [-ldecimal] ==> lib [decimal]
+          arg [--as-needed] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lcilkrts] ==> lib [cilkrts]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [--no-as-needed] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-Bstatic] ==> search static
+          arg [-lirc] ==> lib [irc]
+          arg [-lsvml] ==> lib [svml]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-Bstatic] ==> search static
+          arg [-lirc_s] ==> lib [irc_s]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-ldl] ==> lib [dl]
+          arg [-lc] ==> lib [c]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/public/software/mpi/mpich2-1.5-intel/lib] ==> [/public/software/mpi/mpich2-1.5-intel/lib]
+        collapse library dir [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/lib/intel64_lin] ==> [/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/lib/intel64_lin]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/lib/../lib64/] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/../lib64/] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../] ==> [/usr/lib]
+        collapse library dir [/lib64] ==> [/lib64]
+        collapse library dir [/lib/] ==> [/lib]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [mpich;opa;mpl;rt;pthread;imf;svml;irng;m;ipgo;decimal;cilkrts;stdc++;gcc;gcc_s;irc;svml;c;gcc;gcc_s;irc_s;dl;c]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/public/software/mpi/mpich2-1.5-intel/lib;/public/software/compiler/intel/intel-compiler-2017.5.239/compiler/lib/intel64_lin;/usr/lib/gcc/x86_64-redhat-linux/4.8.5;/usr/lib64;/lib64;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-PvUMG2"
+      binary: "/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-PvUMG2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-PvUMG2'
+        
+        Run Build Command(s): /public/source/cmake-3.27.0-rc5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04dd6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_04dd6.dir/build.make CMakeFiles/cmTC_04dd6.dir/build
+        gmake[1]: Entering directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-PvUMG2'
+        Building CXX object CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o
+        /public/software/compiler/gnu/7.2.0/bin/g++   -v -o CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o -c /public/source/cmake-3.27.0-rc5/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/public/software/compiler/gnu/7.2.0/bin/g++
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/public/software/vasp/5.4//compiler/gnu/7.2.0 --with-gmp=/public/software/vasp/5.4//compiler/gnu/7.2.0/gmp --with-mpfr=/public/software/vasp/5.4//compiler/gnu/7.2.0/mpfr --with-mpc=/public/software/vasp/5.4//compiler/gnu/7.2.0/mpc --disable-multilib --enable-threads=posix --disable-checking --with-system-zlib --enable-languages=c,c++,fortran,objc
+        Thread model: posix
+        gcc version 7.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/cc1plus -quiet -v -iprefix /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/ -D_GNU_SOURCE /public/source/cmake-3.27.0-rc5/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc68h3ih.s
+        GNU C++14 (GCC) version 7.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 7.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version none
+        warning: GMP header version 6.1.2 differs from library version 6.0.0.
+        warning: MPFR header version 3.1.5 differs from library version 3.1.1.
+        warning: MPC header version 1.0.3 differs from library version 1.0.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0"
+        ignoring duplicate directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/x86_64-pc-linux-gnu"
+        ignoring duplicate directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/backward"
+        ignoring duplicate directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include"
+        ignoring duplicate directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include-fixed"
+        ignoring nonexistent directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0
+         /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/x86_64-pc-linux-gnu
+         /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/backward
+         /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include
+         /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include-fixed
+         /usr/local/include
+         /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../include
+         /usr/include
+        End of search list.
+        GNU C++14 (GCC) version 7.2.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 7.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version none
+        warning: GMP header version 6.1.2 differs from library version 6.0.0.
+        warning: MPFR header version 3.1.5 differs from library version 3.1.1.
+        warning: MPC header version 1.0.3 differs from library version 1.0.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: eb0c21f9eae09f9bf15c4b16bf5ae8d2
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc68h3ih.s
+        GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-43.base.el7_8.1
+        COMPILER_PATH=/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/:/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/
+        LIBRARY_PATH=/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_04dd6
+        /public/source/cmake-3.27.0-rc5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04dd6.dir/link.txt --verbose=1
+        /public/software/compiler/gnu/7.2.0/bin/g++  -v -rdynamic CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_04dd6 
+        Using built-in specs.
+        COLLECT_GCC=/public/software/compiler/gnu/7.2.0/bin/g++
+        COLLECT_LTO_WRAPPER=/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/public/software/vasp/5.4//compiler/gnu/7.2.0 --with-gmp=/public/software/vasp/5.4//compiler/gnu/7.2.0/gmp --with-mpfr=/public/software/vasp/5.4//compiler/gnu/7.2.0/mpfr --with-mpc=/public/software/vasp/5.4//compiler/gnu/7.2.0/mpc --disable-multilib --enable-threads=posix --disable-checking --with-system-zlib --enable-languages=c,c++,fortran,objc
+        Thread model: posix
+        gcc version 7.2.0 (GCC) 
+        COMPILER_PATH=/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/:/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/
+        LIBRARY_PATH=/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_04dd6' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/collect2 -plugin /public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so -plugin-opt=/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrlD6hp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_04dd6 /lib/../lib64/crt1.o /lib/../lib64/crti.o /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbegin.o -L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc -L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_04dd6' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-PvUMG2'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0]
+          add: [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/x86_64-pc-linux-gnu]
+          add: [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/backward]
+          add: [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include]
+          add: [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include-fixed]
+          add: [/usr/local/include]
+          add: [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0] ==> [/public/software/compiler/gnu/7.2.0/include/c++/7.2.0]
+        collapse include dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/x86_64-pc-linux-gnu] ==> [/public/software/compiler/gnu/7.2.0/include/c++/7.2.0/x86_64-pc-linux-gnu]
+        collapse include dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/backward] ==> [/public/software/compiler/gnu/7.2.0/include/c++/7.2.0/backward]
+        collapse include dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include] ==> [/public/software/compiler/gnu/7.2.0/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include]
+        collapse include dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include-fixed] ==> [/public/software/compiler/gnu/7.2.0/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include-fixed]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../include] ==> [/public/software/compiler/gnu/7.2.0/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/public/software/compiler/gnu/7.2.0/include/c++/7.2.0;/public/software/compiler/gnu/7.2.0/include/c++/7.2.0/x86_64-pc-linux-gnu;/public/software/compiler/gnu/7.2.0/include/c++/7.2.0/backward;/public/software/compiler/gnu/7.2.0/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include;/public/software/compiler/gnu/7.2.0/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include-fixed;/usr/local/include;/public/software/compiler/gnu/7.2.0/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-PvUMG2']
+        ignore line: []
+        ignore line: [Run Build Command(s): /public/source/cmake-3.27.0-rc5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04dd6/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_04dd6.dir/build.make CMakeFiles/cmTC_04dd6.dir/build]
+        ignore line: [gmake[1]: Entering directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-PvUMG2']
+        ignore line: [Building CXX object CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/public/software/compiler/gnu/7.2.0/bin/g++   -v -o CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o -c /public/source/cmake-3.27.0-rc5/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/public/software/compiler/gnu/7.2.0/bin/g++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/public/software/vasp/5.4//compiler/gnu/7.2.0 --with-gmp=/public/software/vasp/5.4//compiler/gnu/7.2.0/gmp --with-mpfr=/public/software/vasp/5.4//compiler/gnu/7.2.0/mpfr --with-mpc=/public/software/vasp/5.4//compiler/gnu/7.2.0/mpc --disable-multilib --enable-threads=posix --disable-checking --with-system-zlib --enable-languages=c c++ fortran objc]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/cc1plus -quiet -v -iprefix /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/ -D_GNU_SOURCE /public/source/cmake-3.27.0-rc5/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc68h3ih.s]
+        ignore line: [GNU C++14 (GCC) version 7.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 7.2.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.3  isl version none]
+        ignore line: [warning: GMP header version 6.1.2 differs from library version 6.0.0.]
+        ignore line: [warning: MPFR header version 3.1.5 differs from library version 3.1.1.]
+        ignore line: [warning: MPC header version 1.0.3 differs from library version 1.0.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0"]
+        ignore line: [ignoring duplicate directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/x86_64-pc-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/backward"]
+        ignore line: [ignoring duplicate directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include"]
+        ignore line: [ignoring duplicate directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0]
+        ignore line: [ /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/x86_64-pc-linux-gnu]
+        ignore line: [ /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/backward]
+        ignore line: [ /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include]
+        ignore line: [ /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/include-fixed]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/../../include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (GCC) version 7.2.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 7.2.0  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.3  isl version none]
+        ignore line: [warning: GMP header version 6.1.2 differs from library version 6.0.0.]
+        ignore line: [warning: MPFR header version 3.1.5 differs from library version 3.1.1.]
+        ignore line: [warning: MPC header version 1.0.3 differs from library version 1.0.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: eb0c21f9eae09f9bf15c4b16bf5ae8d2]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc68h3ih.s]
+        ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-43.base.el7_8.1]
+        ignore line: [COMPILER_PATH=/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/:/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_04dd6]
+        ignore line: [/public/source/cmake-3.27.0-rc5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04dd6.dir/link.txt --verbose=1]
+        ignore line: [/public/software/compiler/gnu/7.2.0/bin/g++  -v -rdynamic CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_04dd6 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/public/software/compiler/gnu/7.2.0/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/public/software/vasp/5.4//compiler/gnu/7.2.0 --with-gmp=/public/software/vasp/5.4//compiler/gnu/7.2.0/gmp --with-mpfr=/public/software/vasp/5.4//compiler/gnu/7.2.0/mpfr --with-mpc=/public/software/vasp/5.4//compiler/gnu/7.2.0/mpc --disable-multilib --enable-threads=posix --disable-checking --with-system-zlib --enable-languages=c c++ fortran objc]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 7.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/:/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_04dd6' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/collect2 -plugin /public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so -plugin-opt=/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrlD6hp.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_04dd6 /lib/../lib64/crt1.o /lib/../lib64/crti.o /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbegin.o -L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc -L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/public/software/compiler/gnu/7.2.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccrlD6hp.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_04dd6] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbegin.o] ==> obj [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbegin.o]
+          arg [-L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0] ==> dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0]
+          arg [-L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc] ==> dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc]
+          arg [-L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib64] ==> dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..] ==> dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..]
+          arg [CMakeFiles/cmTC_04dd6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtend.o] ==> obj [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbegin.o] ==> [/public/software/compiler/gnu/7.2.0/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbegin.o]
+        collapse obj [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtend.o] ==> [/public/software/compiler/gnu/7.2.0/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtend.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0] ==> [/public/software/compiler/gnu/7.2.0/lib/gcc/x86_64-pc-linux-gnu/7.2.0]
+        collapse library dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc] ==> [/public/software/compiler/gnu/7.2.0/lib/gcc]
+        collapse library dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib64] ==> [/public/software/compiler/gnu/7.2.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/public/software/compiler/gnu/7.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..] ==> [/public/software/compiler/gnu/7.2.0/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/public/software/compiler/gnu/7.2.0/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtbegin.o;/public/software/compiler/gnu/7.2.0/lib/gcc/x86_64-pc-linux-gnu/7.2.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/public/software/compiler/gnu/7.2.0/lib/gcc/x86_64-pc-linux-gnu/7.2.0;/public/software/compiler/gnu/7.2.0/lib/gcc;/public/software/compiler/gnu/7.2.0/lib64;/lib64;/usr/lib64;/public/software/compiler/gnu/7.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/public/source/cmake-3.27.0-rc5/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/public/source/cmake-3.27.0-rc5/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/public/threads.cmake:1 (find_package)"
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/Caffe2Config.cmake:17 (include)"
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:43 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-rMf7tD"
+      binary: "/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-rMf7tD"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-rMf7tD'
+        
+        Run Build Command(s): /public/source/cmake-3.27.0-rc5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9c9f6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9c9f6.dir/build.make CMakeFiles/cmTC_9c9f6.dir/build
+        gmake[1]: Entering directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-rMf7tD'
+        Building C object CMakeFiles/cmTC_9c9f6.dir/src.c.o
+        /public/software/mpi/mpich2-1.5-intel/bin/mpicc -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_9c9f6.dir/src.c.o -MF CMakeFiles/cmTC_9c9f6.dir/src.c.o.d -o CMakeFiles/cmTC_9c9f6.dir/src.c.o -c /public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-rMf7tD/src.c
+        Linking C executable cmTC_9c9f6
+        /public/source/cmake-3.27.0-rc5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c9f6.dir/link.txt --verbose=1
+        /public/software/mpi/mpich2-1.5-intel/bin/mpicc -rdynamic CMakeFiles/cmTC_9c9f6.dir/src.c.o -o cmTC_9c9f6 
+        gmake[1]: Leaving directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeScratch/TryCompile-rMf7tD'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/public/cuda.cmake:67 (try_run)"
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:43 (find_package)"
+    directories:
+      source: "/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeTmp"
+      binary: "/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /public/source/cmake-3.27.0-rc5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2b15f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2b15f.dir/build.make CMakeFiles/cmTC_2b15f.dir/build
+        gmake[1]: Entering directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_2b15f.dir/detect_cuda_version.cc.o
+        /public/software/compiler/gnu/7.2.0/bin/g++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_2b15f.dir/detect_cuda_version.cc.o -c /public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/detect_cuda_version.cc
+        Linking CXX executable cmTC_2b15f
+        /public/source/cmake-3.27.0-rc5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b15f.dir/link.txt --verbose=1
+        /public/software/compiler/gnu/7.2.0/bin/g++ -rdynamic CMakeFiles/cmTC_2b15f.dir/detect_cuda_version.cc.o -o cmTC_2b15f  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        gmake[1]: Leaving directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.2
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:140 (try_run)"
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:197 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/public/utils.cmake:381 (cuda_select_nvcc_arch_flags)"
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/public/cuda.cmake:483 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)"
+      - "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:43 (find_package)"
+    directories:
+      source: "/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeTmp"
+      binary: "/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/public/home/graduate/sFlow-LUO2/lib/libtorch-1.8.0+cu111/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /public/source/cmake-3.27.0-rc5/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3e6c3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3e6c3.dir/build.make CMakeFiles/cmTC_3e6c3.dir/build
+        gmake[1]: Entering directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_3e6c3.dir/detect_cuda_compute_capabilities.cpp.o
+        /public/software/compiler/gnu/7.2.0/bin/g++  -I/usr/local/cuda/include  -o CMakeFiles/cmTC_3e6c3.dir/detect_cuda_compute_capabilities.cpp.o -c /public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/detect_cuda_compute_capabilities.cpp
+        Linking CXX executable cmTC_3e6c3
+        /public/source/cmake-3.27.0-rc5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e6c3.dir/link.txt --verbose=1
+        /public/software/compiler/gnu/7.2.0/bin/g++ -rdynamic CMakeFiles/cmTC_3e6c3.dir/detect_cuda_compute_capabilities.cpp.o -o cmTC_3e6c3  -Wl,-rpath,/usr/local/cuda/lib64 /usr/local/cuda/lib64/libcudart.so 
+        gmake[1]: Leaving directory `/public/home/graduate/sFlow-LUO2/Neural_Network/source/CNN_v3/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        7.5 
+      exitCode: 0
+...
